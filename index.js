@@ -100,12 +100,13 @@ function finalScore(callback, inningsToBePlayed){
     for (let i=0;i<inningsToBePlayed;i++){
       home+=callback();
       away+=callback();
-  } return {
+  } console.log(`The game has lasted ${inningsToBePlayed} innings. The home team has scored ${home} points, and the visitors have ${away}. What a game!`);
+  return {
     Home: home,
     Away: away
   }
 }
-console.log(finalScore(inning, 4));
+finalScore(inning, 7);
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -120,8 +121,8 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(callback) {
+
 
 }
 
