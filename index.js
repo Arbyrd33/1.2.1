@@ -15,10 +15,10 @@
  * It returns the string `foofoo`
 */
 
-function processFirstItem(stringList, callback) {
-  return callback(stringList[0])
-}
-console.log('example task:', processFirstItem(['foo','bar'],function(str){return str+str}));
+// function processFirstItem(stringList, callback) {
+//   return callback(stringList[0])
+// }
+// console.log('example task:', processFirstItem(['foo','bar'],function(str){return str+str}));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -54,6 +54,9 @@ function counter2() {
   return count++;
 }
 
+// 1. count is defined inside of the scope of function one. Also, counter1 is saved to a variable after being created. In function two, count is outside of the function scope.  counter2 is defined when it's created. 
+// 2. counter1 has scope. I can tell because there are multiple sets of curly braces nested within one another :p
+// 3. counter1 would be preferable when I know I'm not going to need to reference anything specifically inside that function and will instead probably just call the function itself. counter2 is more versatile for calling it once and letting go of it forever.
 
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
 Use the inning function below to do the following:
