@@ -122,7 +122,10 @@ For example: invoking getInningScore(inning) might return this object:
 
 
 function getInningScore(callback) {
-
+return {
+  Home: callback(),
+  Away: callback()
+}
 
 }
 
