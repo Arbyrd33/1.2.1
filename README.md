@@ -82,9 +82,12 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? 
+<!-- The closure is return function() {...}, and I can tell because 1) of the nested curly braces, and 2) because of the higher order function being returned within the function personalDice(). -->
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+<!-- Always, Dan's roll will be a whole number between one and six. The actual number could change. The first time you call it, it might return two; the next time it might return three. It will never return 8. -->
 c. What is the lexical scope of `newRoll`? 
+<!-- `newRoll` is within the function's scope. It's local. It is not global. -->
 
 
 ### Task 3 - Stretch Goals
