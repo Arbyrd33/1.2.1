@@ -15,10 +15,10 @@
  * It returns the string `foofoo`
 */
 
-// function processFirstItem(stringList, callback) {
-//   return callback(stringList[0])
-// }
-// console.log('example task:', processFirstItem(['foo','bar'],function(str){return str+str}));
+function processFirstItem(stringList, callback) {
+  return callback(stringList[0])
+}
+console.log('example task:', processFirstItem(['foo','bar'],function(str){return str+str}));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -58,6 +58,7 @@ function counter2() {
 // 2. counter1 has scope. I can tell because there are multiple sets of curly braces nested within one another :p
 // 3. counter1 would be preferable when I know I'm not going to need to reference anything specifically inside that function and will instead probably just call the function itself. counter2 is more versatile for calling it once and letting go of it forever.
 
+
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
 Use the inning function below to do the following:
   1. Return a random whole number of points between 0 and 2 scored by one team in an inning
@@ -67,10 +68,17 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+  return Math.floor(Math.random() * 3);
 }
-
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
+// console.log(inning());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
