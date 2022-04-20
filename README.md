@@ -37,7 +37,7 @@ x4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master 
 x5. cd into your repo
 x6. open the terminal in your vs code and type `npm install`
 x7. next type `npm run test` in your terminal
-8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+x8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
 
 
 ### Task 2a - MVP code
@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+Closure allows you to define objects or variables inside a function and protect the rest of the code from accessing it accidentally. 
 2. Study the following code, then answer the questions below.
 
 ```js
