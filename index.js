@@ -94,10 +94,18 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*Code Here*/){
-  /*Code Here*/
+function finalScore(callback, inningsToBePlayed){
+  let home=0;
+  let away=0;
+    for (let i=0;i<inningsToBePlayed;i++){
+      home+=callback();
+      away+=callback();
+  } return {
+    Home: home,
+    Away: away
+  }
 }
-
+console.log(finalScore(inning, 4));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -124,7 +132,7 @@ Use the scoreboard function below to do the following:
   2. Receive the callback function in a second parameter that will take `inning` from Task 2 as its argument
   3. Receive a number in a third parameter that will take the number of innings to be played as its argument
   4. Return an array where each of it's index values equals a string stating the
-  Home and Away team's scores for each inning.  Not the cummulative score (see the example below).
+  Home and Away team's scores for each inning.  Not the cumulative score (see the example below).
   5. If there's a tie at the end of the innings, add this message containing the score to the end of the array:  "This game will require extra innings: Away 12 - Home 12"  (see tie example below)
      If there isn't a tie, add this message to the end of the array: "Final Score: Away 13 - Home 11"  (see no tie example below)
   
